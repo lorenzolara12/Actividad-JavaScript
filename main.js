@@ -23,3 +23,13 @@ function caja(){
 function cajaStop(){
     video.pause();
 }
+
+function cajaunleashed(){
+    video.pause();
+    let mistcaja = document.getElementById("resultadocaja");
+    mistcaja.innerHTML = `
+    <video id="video" width="1050px" height="600px">  
+        <source src="./img/video.mp4">
+    </video> `
+    video.play();
+}
