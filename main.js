@@ -14,7 +14,7 @@ function clima (){
 function caja(){
     let mistcaja = document.getElementById("resultadocaja");
     mistcaja.innerHTML = `
-    <video id="video" width="450px" height="250px">  
+    <video id="video" class="img-fluid">  
         <source src="./img/video.mp4">
     </video> `
     video.play();
