@@ -1,6 +1,4 @@
 // ejercicio clima
-
-
 function clima (){
     let temp = document.getElementById("temperatura").value;
     if (temp >= 0 && temp <= 16) {
@@ -15,9 +13,13 @@ function clima (){
 
 function caja(){
     let mistcaja = document.getElementById("resultadocaja");
-    mistcaja.innerHTML += `
-    <video id="video" width="700" height="350">  
+    mistcaja.innerHTML = `
+    <video id="video" width="450px" height="250px">  
         <source src="./img/video.mp4">
     </video> `
     video.play();
+}
+
+function cajaStop(){
+    video.pause();
 }
