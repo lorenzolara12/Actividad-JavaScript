@@ -52,6 +52,7 @@ function cajaunleashed(){
 function toFaren(){
     let temp = document.getElementById("temperatura").value;
     let modeTemp = document.getElementById("flexSwitchCheckReverse").checked;
+
     if(modeTemp == true && temp != ''){
         let temp = document.getElementById("temperatura").value;
         let tempFaren = (temp * 9/5) + 32;
@@ -61,14 +62,4 @@ function toFaren(){
         let tempCel = (temp - 32) * 5/9;
         document.getElementById("temperatura").value = tempCel;
     }
-}
-
-function toCel(){
-    if(modeTemp =! 1 ) {
-        let temp = document.getElementById("temperatura").value;
-        let tempCel = (temp - 32) * 5/9;
-        document.getElementById("temperatura").value = tempCel;
-        modeTemp = 1;
-    }
-    
 }
